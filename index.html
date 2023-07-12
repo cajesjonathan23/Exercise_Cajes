@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample 2</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Century Gothic", Arial, sans-serif;
+        }
+        
+        #header {
+            width: 100%;
+            background-image: url("img/spaghetti-bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+        
+        #header img {
+            margin-left: 70%;
+            margin-top: 10%;
+        }
+        
+        #header h1 {
+            margin-left: 65%;
+            margin-right: 10px;
+        }
+        
+        #header h1 {
+            color: #fc881e;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 35px;
+            letter-spacing: 4px;
+            margin-top: 20px;
+        }
+        
+        #header button {
+            color: white;
+            width: 200px;
+            border: none;
+            padding: 10px;
+            background: #fc881e;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+        
+        #header button:hover {
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .button-container {
+            display: flex;
+            margin-left: 65%;
+            margin-top: 20px;
+        }
+
+        .learn-more-button {
+            background-color: green !important;
+        }
+        
+        #content h1,
+        #content p {
+            font-family: "Century Gothic";
+            margin: 0;
+            color: white;
+        }
+        
+        #content-container {
+            background-color: #323231;
+            padding: 50px 50px 50px 50px;
+        }
+
+        #content-container h1 {
+            padding-top: 30px;
+            color: white;
+        }
+        
+        #content {
+            width: 100%;
+            margin: auto;
+            padding-top: 50px;
+            display: flex;
+            padding-left: 20px;
+        }
+        
+        .element1 {
+            flex: 1;
+            padding-right: 20px; /* Add desired padding value */
+        }
+        .element1 img{
+            border-radius: 20px;
+        }
+        
+        .element2 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .element2 h1, .element2 p {
+            color: white;
+        }
+        
+        #content-container2 {
+            padding: 50px 50px 50px 50px;
+            background-color: #141413;
+        }
+        
+        .element4 {
+            width: 25%;
+            float: left;
+            transition: transform 0.3s;
+        }
+        
+        .element4:hover {
+            transform: scale(1.1);
+        }
+        
+        .element4-content {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .element4-content img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+        
+        .element4-content h1 {
+            color: #fc881e;
+            font-weight: bolder;
+        }
+        
+        .footer {
+            width: 100%;
+            background-color: #141413;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="img/rider.png" alt="Logo" width="200">
+        <h1>Feed Me or Should I Feed You?</h1>
+        <div class="button-container">
+            <button>View Now</button>
+            <button class="btn btn-primary learn-more-button">Learn More</button>
+        </div>
+    </div>
+    <div id="content-container">
+        <br><br>
+        <div id="content">
+            <div class="element1">
+                <img src="img/roast-beef-sandwich.jpg" alt="" width="100%">
+            </div>
+            <div class="element2">
+                <h1>Content Item 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quae, quisquam voluptatibus, esse blanditiis sed maiores dicta accusamus aperiam tempora reprehenderit delectus dolor natus minus, animi ducimus nobis cumque rem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iure cupiditate exercitationem incidunt doloremque quis reprehenderit laboriosam cum illo nesciunt accusamus facilis repudiandae repellendus quibusdam tempore possimus aperiam, fuga esse?</p>
+                <div class="button-container">
+                    <button class="btn btn-primary learn-more-button">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="content-container2">
+        <div id="content">
+            <div class="element2">
+                <h1>Content Item 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iure cupiditate exercitationem incidunt doloremque quis reprehenderit laboriosam cum illo nesciunt accusamus facilis repudiandae repellendus quibusdam tempore possimus aperiam, fuga esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maiores distinctio quaerat illo labore, harum totam accusantium exercitationem dolore natus suscipit, qui consectetur hic ut sint delectus iste perferendis sunt!</p>
+                <div class="button-container">
+                    <button class="btn btn-primary learn-more-button">Learn More</button>
+                </div>
+            </div>
+            <div class="element1">
+                <img src="img/roast-beef-sandwich.jpg" alt="" width="100%">
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div><br>
+    <h1>Collections</h1><br>
+    <div class="element4">
+        <div class="element4-content">
+            <img src="img/delish-fettuccine-alfredo.jpg" alt="" width="100%">
+            <h1>Dish 1</h1>
+        </div>
+    </div>
+    <div class="element4">
+        <div class="element4-content">
+            <img src="img/delish-fettuccine-alfredo.jpg" alt="" width="100%">
+            <h1>Dish 2</h1>
+        </div>
+    </div>
+    <div class="element4">
+        <div class="element4-content">
+            <img src="img/delish-fettuccine-alfredo.jpg" alt="" width="100%">
+            <h1>Dish 3</h1>
+        </div>
+    </div>
+    <div class="element4">
+        <div class="element4-content">
+            <img src="img/delish-fettuccine-alfredo.jpg" alt="" width="100%">
+            <h1>Dish 4</h1>
+        </div>
+    </div><br><div style="clear: both;"></div>
+    <div class="footer"></div>
+</body>
+</html>
